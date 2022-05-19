@@ -6,6 +6,7 @@ window.addEventListener('load', () => {
     let temperatureDescription = document.querySelector(".description")
     let locationTimezone = document.querySelector(".location-timezone")
     let weatherIcon = document.querySelector(".icon")
+    
 
     if(navigator.geolocation) {
             navigator.geolocation.getCurrentPosition
@@ -24,14 +25,15 @@ window.addEventListener('load', () => {
                 console.log(data)
                 const {temp} = data.main
                 const {description, icon} = data.weather[0]
+                
                 //Set DOM Elements from the API
                 temperatureDegree.textContent = temp
                 temperatureDescription.textContent = description
                 locationTimezone.textContent = data.name
-                weatherIcon.textContent = icon 
+                document.querySelector(".icon").src =
+                "https://openweathermap.org/img/wn/" + icon + ".png";
 
             })
         })
-
-    } 
+    }           
 })
