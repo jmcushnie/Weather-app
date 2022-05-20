@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
                 const {description, icon} = data.weather[0]
                 
                 //Set DOM Elements from the API
-                temperatureDegree.textContent = temp
+                temperatureDegree.textContent = (Math.round(temp))
                 temperatureDescription.textContent = description
                 locationTimezone.textContent = data.name
                 document.querySelector(".icon").src =
