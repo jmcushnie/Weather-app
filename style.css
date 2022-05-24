@@ -17,47 +17,56 @@
   .card-container {
       background-color: none;
       display: flex;
-      flex-direction: column;
+      flex-direction:column;
+      justify-content: center;
+      align-content: center;
       padding: 4rem;
-      position: absolute;
-      bottom: 10px;
+      height: 100vh;
 
   }
 
-  .location {
+  .elements {
       display: flex;
-        flex-direction: row-reverse;
-      gap:1.5rem;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
       align-items: center;
+      gap: 0.5rem;
+  }
+
+  .temperature-degree {
+      font-size: 2pxrem;
+  }
+
+  .location-timezone {
+      font-size: 1.5rem;
+      font-weight: 500;
+  }
+
+  img {
+      width:70px
+  }
+
+  .temperature {
+      display: flex;
+      align-items: center;
+  }
+
+  .degree-container {
+      justify-content: center;
+      display: flex;
   }
 
   .temperature-degree {
       font-size: 3rem;
   }
 
-  .location-timezone {
-      font-size: 3.5rem;
-      font-weight: 500;
-  }
 
-  img {
-      width:100px
+  .time {
+      font-size: 8rem;
+      font-family: 'Odibee Sans', cursive;
+     text-align: center;
   }
-
-  .temperature {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
-
-  .degree-container {
-      display: flex;
-  }
-
-  .temperature-degree {
-      font-size: 4rem;
-  }
-
   @media screen and (orientation:portrait) and (max-width: 768px) {
 
     body {
