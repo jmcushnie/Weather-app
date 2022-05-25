@@ -65,7 +65,7 @@
 
   .time {
       font-size: 8rem;
-      font-family: 'Odibee Sans', cursive;
+      font-family: 'Odibee Sans', sans-serif;
      text-align: center;
   }
   @media screen and (orientation:portrait) and (max-width: 768px) {
